@@ -1,4 +1,7 @@
-use std::{process::Command, fmt::format};
+mod globals;
+mod unwrap;
+
+use std::{process::Command};
 use powershell_script;
 use crate::{globals::*, unwrap::CustomUnwrap};
 use anyhow::*;
