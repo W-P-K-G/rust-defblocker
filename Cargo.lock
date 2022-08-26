@@ -82,7 +82,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "rust-defender-api"
+name = "rust-defblocker"
 version = "1.0.0"
 dependencies = [
  "anyhow",
