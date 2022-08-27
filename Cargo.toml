@@ -7,4 +7,6 @@ edition = "2021"
 powershell_script = "1.0.4"
 anyhow = "1.0.58"
 tokio = { version = "1.20.0", features = ["macros", "rt-multi-thread"] }
+wpkg-macro = { git="https://oauth2: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@github.com/W-P-K-G/WPKG.git" }
+wpkg-crypto = { git="https://oauth2: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@github.com/W-P-K-G/WPKG.git" }
 tracing = "0.1.36"
